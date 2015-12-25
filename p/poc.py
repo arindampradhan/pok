@@ -58,7 +58,7 @@ def pull_all(command="ls", count=DEFAULT_COUNT, state="all", link_flag=False):
 
     try:
         res = requests.post(
-        GET_URL, data=json.dumps(PAYLOAD), headers=HEADERS, verify=False)
+            GET_URL, data=json.dumps(PAYLOAD), headers=HEADERS, verify=False)
     except:
         raise ("Seems there is something wrong with the config file!")
     return render(res.json()['list'], link_flag=link_flag)
@@ -125,12 +125,9 @@ def arrange(json_list):
     Returns a json list in order of time stamp.
     """
     j_list = []
-    max_title_len = 0
     for key in json_list.keys():
         tupl = (json_list[key]['time_added'], json_list[key])
         j_list.append(tupl)
-        max_title_len = max(
-            max_title_len, len(json_list[key]['resolved_title']))
     sorted_list = sorted(j_list, key=lambda x: x[0], reverse=True)
     json_list = [x[1] for x in sorted_list]
     return json_list
