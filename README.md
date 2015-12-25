@@ -2,6 +2,11 @@
 
 # pok - Pocket CLI
 
+| License | Version |
+|---------|---------|
+|[![license](https://img.shields.io/pypi/l/pok.svg)](https://github.com/arindampradhan/pok/blob/master/LICENSE)|[![version](https://img.shields.io/pypi/v/Pok.svg)](https://github.com/arindampradhan/pok/releases)|
+
+
 ## Why Use It
 
 * Chrome extensions only gives saving options.
