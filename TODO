@@ -1,0 +1,7 @@
+add open parameter:
+i.e:
+
+```
+    $ pok open [ID ...]
+```
+To open in the links in browser.
