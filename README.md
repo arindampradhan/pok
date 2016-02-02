@@ -64,7 +64,7 @@
 
 **You can find the ``<ID>`` from ``$ pok ls`` command**.
 
-    $ pok add <url> <tags>  # Rarely going to use this.
+    $ pok push <url> <tags>  # Rarely going to use this.
 
 
 **Adios**
